@@ -1,0 +1,33 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption & Decryption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encryption & Decryption</h1>
+        <form id="encryption-form">
+            <label for="input-text">Input Text:</label>
+            <textarea id="input-text" name="input-text" rows="4" cols="50"></textarea><br>
+            <label for="encryption-mode">Encryption Mode:</label>
+            <select id="encryption-mode" name="encryption-mode">
+                <option value="encrypt">Encrypt</option>
+                <option value="decrypt">Decrypt</option>
+            </select><br>
+            <label for="key">Encryption Key:</label>
+            <input type="password" id="key" name="key" value="password"><br>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="output-container">
+            <p id="output-text"></p>
+            <button id="copy-button" style="display: none;">Copy to Clipboard</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
